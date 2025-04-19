@@ -3,9 +3,7 @@ import categories from "../fake-data/all-categories";
 import Category from "./Category";
 
 const Categories = ({ setSelectedCategory, selectedCategory }) => {
-  const handleSubmit = (category) => {
-    setSelectedCategory(category);
-  };
+
   return (
     <>
       <div className="categories">
@@ -14,7 +12,9 @@ const Categories = ({ setSelectedCategory, selectedCategory }) => {
             key={category}
             name={category}
             selectedCategory={selectedCategory}
-            onClick={() => handleSubmit(category)}
+            onClick={() =>
+              setSelectedCategory(selectedCategory === category ? null : category)
+            }
           />
         ))}
       </div>
