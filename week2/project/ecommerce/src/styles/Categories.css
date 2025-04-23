@@ -1,0 +1,4 @@
+.categories {
+  display: flex;
+  gap: var(--category-gap);
+}

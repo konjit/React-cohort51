@@ -1,0 +1,17 @@
+.category {
+  padding: 0.6rem 1.2rem;
+  background-color: var(--default-bg-color);
+  color: var(--default-text-color);
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: var(--font-weight);
+  border-radius: var(--default-border-radius);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: block;
+}
+
+.category:hover,
+.category.active {
+  background-color: var(--default-hover-bg-color);
+  transform: translateY(-0.125rem);
+}
