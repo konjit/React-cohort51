@@ -1,0 +1,15 @@
+.no-match {
+  text-align: center;
+  padding: 4rem 1rem;
+  color: #444;
+}
+
+.no-match h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.no-match p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+}

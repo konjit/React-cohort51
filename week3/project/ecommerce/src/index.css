@@ -1,0 +1,55 @@
+:root {
+  --default-bg-color: #d8d8d8;
+  --default-text-color: #000;
+  --font-weight: 800;
+  --default-hover-bg-color: #c2bfbf;
+  --default-border-radius: 0.5rem;
+  --product-gap: 1.5rem;
+  --category-gap: 0.5rem;
+  --page-max-width: 120rem;
+  --primary-color: rgb(182, 51, 160);
+  --text-color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  font-size: 1rem;
+  font-family: "Segoe UI", Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #f5f5f5;
+  color: var(--default-text-color);
+  padding: 1rem;
+  max-width: var(--page-max-width);
+  margin: 0 auto;
+  height: 100vh;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  font-weight: bold;
+}
+
+footer{
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-color);
+  background-color: #fff;
+}
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+}
