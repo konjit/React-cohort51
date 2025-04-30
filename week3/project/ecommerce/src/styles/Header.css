@@ -78,6 +78,7 @@ header {
 }
 
 nav .nav-link a {
+  color: #333;
   position: relative;
 }
 
