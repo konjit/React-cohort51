@@ -1,24 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { useState } from "react";
-import Categories from "./components/Categories";
-import Products from "./pages/Products";
+import MainPage from "./pages/MainPage";
 import NoMatch from "./components/NoMatch";
 import ProductDetail from "./components/ProductDetail";
 
-const MainPage = () => {
-  const [selectedCategory, setSelectedCategory] = useState(null);
-
-  return (
-    <>
-      <h1 className="products-heading">Products</h1>
-      <Categories
-        setSelectedCategory={setSelectedCategory}
-        selectedCategory={selectedCategory}
-      />
-      <Products selectedCategory={selectedCategory} />
-    </>
-  );
-};
 
 const App = () => {
   return (
