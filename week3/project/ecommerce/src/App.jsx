@@ -12,33 +12,30 @@ const App = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
 
   return (
-
     <FavoritesProvider>
-  <BrowserRouter>
-    <div className="app-container">
-      <Header
-        selectedCategory={selectedCategory}
-        setSelectedCategory={setSelectedCategory}
-      />
-
-      <main className="main-content">
-        <Routes>
-          <Route
-            path="/"
-            element={<Products selectedCategory={selectedCategory} />}
+      <BrowserRouter>
+        <div className="app-container">
+          <Header
+            selectedCategory={selectedCategory}
+            setSelectedCategory={setSelectedCategory}
           />
-          <Route path="/favorites" element={<FavoritesPage />} />
-          <Route path="/products/:id" element={<ProductDetail />} />
-          <Route path="*" element={<NoMatch />} />
-        </Routes>
-      </main>
 
-      <Footer />
-    </div>
-  </BrowserRouter>
-</FavoritesProvider>
+          <main className="main-content">
+            <Routes>
+              <Route
+                path="/"
+                element={<Products selectedCategory={selectedCategory} />}
+              />
+              <Route path="/favorites" element={<FavoritesPage />} />
+              <Route path="/products/:id" element={<ProductDetail />} />
+              <Route path="*" element={<NoMatch />} />
+            </Routes>
+          </main>
 
-   
+          <Footer />
+        </div>
+      </BrowserRouter>
+    </FavoritesProvider>
   );
 };
 

@@ -32,7 +32,7 @@ const useFetch = (initialUrl) => {
 
   useEffect(() => {
     if (url) fetchData();
-  }, [fetchData]);
+  }, [fetchData, url]);
 
   return { data, error, loading, setUrl };
 };

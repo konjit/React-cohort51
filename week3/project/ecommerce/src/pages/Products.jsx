@@ -16,20 +16,19 @@ const Products = ({ selectedCategory }) => {
 
   useEffect(() => {
     setUrl(productsUrl);
-  }, [productsUrl]);
+  }, [productsUrl, setUrl]);
 
   return (
     <>
       {loading && <Loader />}
       {error && <div>{error} products</div>}
       <div className="products">
-        {products?.map(product => (
+        {products?.map((product) => (
           <Product key={product.id} product={product} />
         ))}
       </div>
     </>
   );
 };
-
 
 export default Products;
